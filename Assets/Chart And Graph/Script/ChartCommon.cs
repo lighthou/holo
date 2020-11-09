@@ -320,9 +320,38 @@ namespace ChartAndGraph
             if (obj == null)
                 return;
             if (Application.isEditor && Application.isPlaying == false)
-                UnityEngine.Object.DestroyImmediate(obj);
+                //HideObject(obj, true);
+                try
+                {
+                    UnityEngine.Object.DestroyImmediate(obj);
+                } catch (Exception e)
+                {
+                    try
+                    {
+                        UnityEngine.Object.Destroy(obj);
+                    }
+                    catch (Exception x)
+                    {
+
+                    }
+                }
             else
-                UnityEngine.Object.Destroy(obj);
+                //HideObject(obj, true);
+                try
+                {
+                    UnityEngine.Object.DestroyImmediate(obj);
+                }
+                catch (Exception e)
+                {
+                    try
+                    {
+                        UnityEngine.Object.Destroy(obj);
+                    }
+                    catch (Exception x)
+                    {
+
+                    }
+                }
         }
         internal static UIVertex CreateVertex(Vector3 pos, Vector2 uv)
         {

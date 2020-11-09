@@ -567,7 +567,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
             if (twoHandedManipulationType.HasFlag(TransformFlags.Move))
             {
                 MixedRealityPose pose = GetPointersPose();
-                targetTransform.Position = moveLogic.Update(pose, targetTransform.Rotation, targetTransform.Scale, true);
+                //targetTransform.Position = moveLogic.Update(pose, targetTransform.Rotation, targetTransform.Scale, true);
                 constraints.ApplyTranslationConstraints(ref targetTransform, false, IsNearManipulation());
             }
 
@@ -609,7 +609,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
 
             RotateInOneHandType rotateInOneHandType = isNearManipulation ? oneHandRotationModeNear : oneHandRotationModeFar;
             MixedRealityPose pointerPose = new MixedRealityPose(pointer.Position, pointer.Rotation);
-            targetTransform.Position = moveLogic.Update(pointerPose, targetTransform.Rotation, targetTransform.Scale, rotateInOneHandType != RotateInOneHandType.RotateAboutObjectCenter);
+           // targetTransform.Position = moveLogic.Update(pointerPose, targetTransform.Rotation, targetTransform.Scale, rotateInOneHandType != RotateInOneHandType.RotateAboutObjectCenter);
 
             constraints.ApplyTranslationConstraints(ref targetTransform, true, IsNearManipulation());
 
@@ -679,7 +679,7 @@ namespace Microsoft.MixedReality.Toolkit.UI
         {
             if (rigidBody == null)
             {
-                HostTransform.position = SmoothTo(HostTransform.position, targetTransform.Position, moveLerpTime);
+                //HostTransform.position = SmoothTo(HostTransform.position, targetTransform.Position, moveLerpTime);
                 HostTransform.rotation = SmoothTo(HostTransform.rotation, targetTransform.Rotation, rotateLerpTime);
                 HostTransform.localScale = SmoothTo(HostTransform.localScale, targetTransform.Scale, scaleLerpTime);
             }

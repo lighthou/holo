@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6672303668358387328}
   - component: {fileID: 8903758241571212661}
   m_Layer: 0
-  m_Name: 2010
+  m_Name: 2011
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -135,40 +135,40 @@ MonoBehaviour:
     mData:
     - GroupName: All
       ColumnName: Jan
-      Amount: 40.2
+      Amount: 315.8
     - GroupName: All
       ColumnName: Feb
-      Amount: 272.4
+      Amount: 157
     - GroupName: All
       ColumnName: Mar
-      Amount: 162.2
+      Amount: 149.2
     - GroupName: All
       ColumnName: Apr
-      Amount: 36.4
+      Amount: 100.2
     - GroupName: All
       ColumnName: May
-      Amount: 61.2
+      Amount: 69.2
     - GroupName: All
       ColumnName: Jun
-      Amount: 6.2
+      Amount: 10.6
     - GroupName: All
       ColumnName: Jul
-      Amount: 27.8
+      Amount: 12.4
     - GroupName: All
       ColumnName: Aug
-      Amount: 104.6
+      Amount: 76.8
     - GroupName: All
       ColumnName: Sep
-      Amount: 103.6
+      Amount: 18.6
     - GroupName: All
       ColumnName: Oct
-      Amount: 306.4
+      Amount: 117.8
     - GroupName: All
       ColumnName: Nov
-      Amount: 57.8
+      Amount: 15.6
     - GroupName: All
       ColumnName: Dec
-      Amount: 479.8
+      Amount: 132.4
     automaticMaxValue: 1
     maxValue: 10
     automaticMinValue: 0
